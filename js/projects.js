@@ -5,58 +5,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             id: 1,
-            title: "Projeto #1",
-            description: "A full-stack e-commerce solution with React, Node.js, and MongoDB.",
-            tags: ["React", "Node.js", "MongoDB", "Redux"],
-            image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            title: "C++ Image converter",
+            description: "An .png converter into .svg to increase image scalability and quality",
+            detailedDescription: `
+                <p>This project is a high-performance image converter that transforms PNG files into scalable SVG vector graphics.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Supports batch processing of multiple files</li>
+                    <li>Preserves transparency and color accuracy</li>
+                    <li>Customizable output resolution</li>
+                </ul>
+                <h4>Technologies Used:</h4>
+                <p>C++17, STL, libpng, custom vectorization algorithms</p>
+            `,
+            tags: ["C++", "C"],
+            image: "",
             demoUrl: "#",
-            codeUrl: "https://github.com/FEUP-LTW-2025/ltw-project-ltw03g02"
+            codeUrl: "https://github.com/TiagoAfonseca11/cpp-png-converter"
         },
-        {
-            id: 2,
-            title: "Projeto #2",
-            description: "A productivity app built with Vue.js and Firebase for real-time collaboration.",
-            tags: ["Vue.js", "Firebase", "JavaScript", "CSS3"],
-            image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
-        },
-        {
-            id: 3,
-            title: "Projeto #3",
-            description: "Real-time weather application with geolocation and forecast features.",
-            tags: ["JavaScript", "API", "Chart.js", "HTML5"],
-            image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
-        },
-        {
-            id: 4,
-            title: "Projeto #4",
-            description: "Responsive portfolio website with modern animations and smooth scrolling.",
-            tags: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-            image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
-        },
-        {
-            id: 5,
-            title: "Projeto #5",
-            description: "Real-time chat app with Socket.io, user authentication and file sharing.",
-            tags: ["Socket.io", "Node.js", "Express", "MongoDB"],
-            image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
-        },
-        {
-            id: 6,
-            title: "Projeto #6",
-            description: "Recipe search app with ingredient-based filtering and nutritional information.",
-            tags: ["React", "API Integration", "Styled Components", "Redux"],
-            image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
-        }
+        // ... other projects with similar detailedDescription
     ];
 
     function renderProjects() {
@@ -103,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+    
 
     // Tentar renderizar imediatamente
     renderProjects();
