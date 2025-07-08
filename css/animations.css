@@ -1,0 +1,73 @@
+/* Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Delay Classes */
+  .delay-1 {
+    transition-delay: 0.1s;
+  }
+  
+  .delay-2 {
+    transition-delay: 0.2s;
+  }
+  
+  .delay-3 {
+    transition-delay: 0.3s;
+  }
+  
+  .delay-4 {
+    transition-delay: 0.4s;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Specific Element Animations */
+  .hero-title {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .hero-subtitle {
+    animation: fadeIn 1s ease-out 0.3s forwards;
+  }
+  
+  .scroll-indicator {
+    animation: fadeIn 1s ease-out 0.6s forwards;
+  }
