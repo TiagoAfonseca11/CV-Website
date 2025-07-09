@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NBA Predictor 2025-26 | Tiago Afonseca</title>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96"/>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Tiago Afonseca |<span> Software Engineer</span></a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <main class="project-detail">
+    <div class="project-header">
+      <div class="container">
+        <h1>NBA Predictor 2025-26</h1>
+        <p class="subtitle">Machine Learning Championship Forecast</p>
+        <div class="project-meta">
+          <span class="tag python">Python</span>
+          <span class="tag ml">Machine Learning</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content container">
+      <div class="project-overview">
+
+        <div class="project-links">
+          <a href="https://github.com/TiagoAfonseca11/nba-predictor" class="btn primary" target="_blank">
+            View Code
+          </a>
+          <a href="index.html#projects" class="btn secondary">
+            Back to Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="project-details">
+        <h2>Project Overview</h2>
+        <p>
+          <strong>NBA Predictor</strong> is a championship prediction system for the NBA based on real data, season stats, clutch time performance, and historical analysis.
+          It uses machine learning to calculate probabilities and provide insights about which teams are most likely to win the 2025-26 title.
+        </p>
+
+        <div class="project-features">
+          <h3>Key Features:</h3>
+          <ul>
+            <li>Top 10 title contenders prediction with percentage probabilities</li>
+            <li>Integration of clutch stats, regular season data, and historical performance</li>
+            <li>Detailed team analysis including offensive rating, defensive rating, and plus/minus</li>
+            <li>Automatic CSV file generation with predictions</li>
+            <li>Visualization of the current NBA standings</li>
+          </ul>
+        </div>
+
+        <div class="project-technologies">
+          <h3>Technologies Used:</h3>
+          <div class="tech-badges">
+            <span>Python 3.11</span>
+            <span>Pandas</span>
+            <span>Scikit-learn</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="project-challenges">
+          <h3>Challenges & Solutions:</h3>
+          <div class="challenge">
+            <h4>Combining multiple data sources</h4>
+            <p>Custom parsers were developed to merge current stats, historical data, and clutch performance, ensuring data integrity and synchronization.</p>
+          </div>
+          <div class="challenge">
+            <h4>Prediction accuracy</h4>
+            <p>The model was fine-tuned using data from the past 5 seasons and validated against historical outcomes to improve accuracy and reduce false positives.</p>
+          </div>
+        </div>
+
+        <div class="project-output">
+          <h3>Sample Output:</h3>
+          <pre><code>
+🏆 TOP 10 TITLE CONTENDERS:
+🥇 Oklahoma City Thunder       92.8%
+🥈 Cleveland Cavaliers         81.0%
+🥉 Boston Celtics              80.0%
+...  
+✅ Full analysis complete! Data saved to 'predictions_20250709.csv'
+          </code></pre>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/TiagoAfonseca11" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
+      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+    </div>
+    <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

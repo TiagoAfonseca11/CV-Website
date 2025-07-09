@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 6,
-            title: "Ai ",
-            description: "Recipe search app with ingredient-based filtering and nutritional information.",
-            tags: ["React", "API Integration", "Styled Components", "Redux"],
-            image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
+            title: "NBA Predictor 2025-26",
+            description: "Prediction model in Python that analyzes NBA statistics to forecast championship probabilities and rank teams for the 2025-26 season.",
+            tags: ["Python", "Machine Learning", "Data Analysis", "NBA API"],
+            image: "assets/Python-logo-notext.svg.png",
+            demoUrl: "projeto6.html",
+            codeUrl: "https://github.com/TiagoAfonseca11/NBA-Champion-predictor"
         }
     ];
 
