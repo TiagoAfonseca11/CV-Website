@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best-Route Planner | Tiago Afonseca</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Tiago Afonseca |<span> Software Engineer</span></a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <main class="project-detail">
+    <div class="project-header">
+      <div class="container">
+        <h1>Best-Route Planner</h1>
+        <p class="subtitle">Graph-based route planning app using Dijkstra and other pathfinding algorithms in C++.</p>
+        <div class="project-meta">
+          <span class="tag cpp">C++</span>
+          <span class="tag c">C</span>
+          <span class="tag test">GoogleTest</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content container">
+      <div class="project-overview">
+        <div class="project-links">
+          <a href="https://github.com/TiagoAfonseca11/graph-best-route" class="btn primary" target="_blank">
+            View Code
+          </a>
+          <a href="index.html#projects" class="btn secondary">
+            Back to Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="project-details">
+        <h2>Project Overview</h2>
+        <p>
+          This C++ application determines the best route between two points in a directed graph. It supports multiple shortest path algorithms like Dijkstra and can be extended with alternatives like Johnson's or Bellman-Ford. Designed for both command-line and file-based inputs, it emphasizes performance and clarity.
+        </p>
+
+        <div class="project-features">
+          <h3>Key Features:</h3>
+          <ul>
+            <li>Fast pathfinding using Dijkstra’s algorithm with priority queues</li>
+            <li>Custom graph class with adjacency list representation</li>
+            <li>Support for road vs pedestrian time constraints (hybrid mode)</li>
+            <li>Terminal-based interactive input or file-based graph input</li>
+            <li>Robust error handling and input validation</li>
+            <li>Unit tests written with GoogleTest for reliability</li>
+          </ul>
+        </div>
+
+        <div class="project-technologies">
+          <h3>Technologies Used:</h3>
+          <div class="tech-badges">
+            <span>C++</span>
+            <span>C</span>
+            <span>STL</span>
+            <span>GoogleTest</span>
+            <span>Graphs & Data Structures</span>
+          </div>
+        </div>
+
+        <div class="project-challenges">
+          <h3>Challenges & Solutions:</h3>
+          <div class="challenge">
+            <h4>Efficiency & Scalability</h4>
+            <p>Used a priority queue-based implementation of Dijkstra to ensure performance even on large graphs with thousands of nodes.</p>
+          </div>
+          <div class="challenge">
+            <h4>Flexible Input Modes</h4>
+            <p>Designed the system to work both interactively and from files, handling diverse use cases for testing and usage.</p>
+          </div>
+          <div class="challenge">
+            <h4>Code Quality & Testing</h4>
+            <p>Implemented unit tests using GoogleTest to validate edge cases, performance, and correctness of all critical components.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/TiagoAfonseca11" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
+      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+    </div>
+    <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Update year automatically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

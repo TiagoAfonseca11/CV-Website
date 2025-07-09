@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minixsweeper Game | Tiago Afonseca</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Tiago Afonseca |<span> Software Engineer</span></a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <main class="project-detail">
+    <div class="project-header">
+      <div class="container">
+        <h1>Minixsweeper Game</h1>
+        <p class="subtitle">Minesweeper game built with C on Minix3, utilizing low-level device programming</p>
+        <div class="project-meta">
+          <span class="tag cpp">C</span>
+          <span class="tag c">Minix3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content container">
+        <div class="project-overview">
+      
+          <div class="project-links">
+            <a href="https://github.com/TiagoAfonseca11/Minixsweeper/tree/main/proj/src" class="btn primary" target="_blank">
+              View Code
+            </a>
+            <a href="index.html#projects" class="btn secondary">
+              Back to Projects
+            </a>
+          </div>
+        </div>
+      
+        <div class="project-details">
+          <h2>Project Overview</h2>
+          <p>This project is a low-level implementation of the classic Minesweeper game, developed in C using the Minix3 operating system.<br>
+          It fully integrates hardware-level control of input and output devices, showcasing direct interaction with the keyboard, mouse, real-time clock (RTC), and graphics card. 
+          Developed as part of a university assignment alongside classmates for the course "Computer Labs".
+          </p>
+          
+          <div class="project-features">
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Fully interactive Minesweeper gameplay</li>
+              <li>Mouse and keyboard input handling through hardware interrupts</li>
+              <li>Graphical interface rendered via direct video memory access</li>
+              <li>Custom timer and RTC integration for game timing and events</li>
+              <li>Modular and maintainable codebase in pure C</li>
+            </ul>
+          </div>
+      
+          <div class="project-technologies">
+            <h3>Technologies Used:</h3>
+            <div class="tech-badges">
+              <span>C</span>
+              <span>Minix3</span>
+              <span>i8254 Timer</span>
+              <span>i8042 Keyboard & Mouse</span>
+              <span>VBE Graphics Mode</span>
+              <span>RTC (Real-Time Clock)</span>
+            </div>
+          </div>
+      
+          <div class="project-challenges">
+            <h3>Challenges & Solutions:</h3>
+            <div class="challenge">
+              <h4>Hardware Interaction</h4>
+              <p>Accessing and controlling low-level devices like the mouse, RTC, and keyboard required deep understanding of hardware interrupts and Minix3's system calls.</p>
+            </div>
+            <div class="challenge">
+              <h4>Graphics Programming</h4>
+              <p>Rendering a functional and responsive UI involved direct manipulation of video memory using VBE, without relying on any high-level graphics library.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/TiagoAfonseca11" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
+      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+    </div>
+    <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Update year automatically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

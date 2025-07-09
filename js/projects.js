@@ -5,52 +5,52 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             id: 1,
-            title: "Projeto #1",
-            description: "A full-stack e-commerce solution with React, Node.js, and MongoDB.",
-            tags: ["React", "Node.js", "MongoDB", "Redux"],
-            image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            title: "PNG to SVG Converter",
+            description: "A C/C++ program that converts .png into .svg",
+            tags: ["C++", "C"],
+            image: "assets/c.webp.png",
             demoUrl: "project1.html",
             codeUrl: "https://github.com/TiagoAfonseca11/cpp-png-converter"
         },
         {
             id: 2,
-            title: "Projeto #2",
-            description: "A productivity app built with Vue.js and Firebase for real-time collaboration.",
-            tags: ["Vue.js", "Firebase", "JavaScript", "CSS3"],
-            image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
+            title: "Minixsweeper Game",
+            description: "Minesweeper game built with C on Minix3, utilizing low-level device programming",
+            tags: ["C", "Minix3"],
+            image: "assets/images.png",
+            demoUrl: "project2.html",
+            codeUrl: "https://github.com/TiagoAfonseca11/Minixsweeper/tree/main/proj/src"
         },
         {
             id: 3,
-            title: "Projeto #3",
-            description: "Real-time weather application with geolocation and forecast features.",
-            tags: ["JavaScript", "API", "Chart.js", "HTML5"],
-            image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
+            title: "Freelancer Platform",
+            description: "A full-featured freelancer marketplace connecting clients and service providers, with integrated RESTful API and database management.",
+            tags: ["JavaScript", "PHP", "SQL", "HTML5", "CSS"],
+            image: "assets/sql.webp",
+            demoUrl: "project3.html",
+            codeUrl: "https://github.com/TiagoAfonseca11/Freelancer-Website"
         },
         {
             id: 4,
-            title: "Projeto #4",
-            description: "Responsive portfolio website with modern animations and smooth scrolling.",
-            tags: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-            image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
+            "title": "Lost & Found App",
+            "description": "Flutter app for managing lost and found items, with Firebase integration, responsive UI, and secure user authentication.",          
+            tags: ["Flutter", "Dart", "Firebase"],
+            image: "assets/flutter.png",
+            demoUrl: "projeto4.html",
+            codeUrl: "https://github.com/TiagoAfonseca11/Lost-and-Founds-App"
         },
         {
             id: 5,
-            title: "Projeto #5",
-            description: "Real-time chat app with Socket.io, user authentication and file sharing.",
-            tags: ["Socket.io", "Node.js", "Express", "MongoDB"],
-            image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            demoUrl: "#",
-            codeUrl: "#"
+            title: "Best-Route Planner with Dijkstra & Graph Algorithms",
+            description: "C++ application that computes optimal routes using Dijkstra and other graph algorithms, supported by custom data structures and unit tests.",
+            tags: ["C++", "C", "GoogleTest"],
+            image: "assets/route.gif",
+            demoUrl: "projeto5.html",
+            codeUrl: "https://github.com/TiagoAfonseca11/Best-Route---Dijkstra-s"
         },
         {
             id: 6,
-            title: "Projeto #6",
+            title: "Ai ",
             description: "Recipe search app with ingredient-based filtering and nutritional information.",
             tags: ["React", "API Integration", "Styled Components", "Redux"],
             image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost & Found App | Tiago Afonseca</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Tiago Afonseca |<span> Software Engineer</span></a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <main class="project-detail">
+    <div class="project-header">
+      <div class="container">
+        <h1>Lost & Found App</h1>
+        <p class="subtitle">Mobile app developed in Flutter for managing and recovering lost items in a university setting.</p>
+        <div class="project-meta">
+          <span class="tag flutter">Flutter</span>
+          <span class="tag dart">Dart</span>
+          <span class="tag firebase">Firebase</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content container">
+      <div class="project-overview">
+        <div class="project-links">
+          <a href="https://github.com/TiagoAfonseca11/lost-and-found-app" class="btn primary" target="_blank">
+            View Code
+          </a>
+          <a href="index.html#projects" class="btn secondary">
+            Back to Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="project-details">
+        <h2>Project Overview</h2>
+        <p>
+          This Flutter application simplifies the process of managing lost and found items within a university. Integrated with Firebase, it allows students to report, claim, and view items through a clean and responsive mobile interface. The app features secure authentication, data persistence, and automated item expiration rules.
+        </p>
+
+        <div class="project-features">
+          <h3>Key Features:</h3>
+          <ul>
+            <li>Firebase Authentication with secure account creation and login</li>
+            <li>Cloud Firestore database for real-time item tracking</li>
+            <li>Custom UI with Flutter animations and responsive layout</li>
+            <li>Automatic auctioning of unclaimed items after a defined period</li>
+            <li>Account deletion and secure logout functionality</li>
+            <li>Image uploads and item categorization for fast discovery</li>
+          </ul>
+        </div>
+
+        <div class="project-technologies">
+          <h3>Technologies Used:</h3>
+          <div class="tech-badges">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Firebase Authentication</span>
+            <span>Cloud Firestore</span>
+            <span>Firebase Storage</span>
+          </div>
+        </div>
+
+        <div class="project-challenges">
+          <h3>Challenges & Solutions:</h3>
+          <div class="challenge">
+            <h4>User Data Security</h4>
+            <p>Used Firebase Authentication and Firestore security rules to ensure users could only access their own data and actions.</p>
+          </div>
+          <div class="challenge">
+            <h4>Dynamic Item Management</h4>
+            <p>Implemented real-time updates with Firestore listeners and timers to automatically handle expired items and trigger auctions.</p>
+          </div>
+          <div class="challenge">
+            <h4>Smooth User Experience</h4>
+            <p>Designed a lightweight yet elegant interface with responsive layouts and custom transitions using Flutter’s animation framework.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/TiagoAfonseca11" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
+      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+    </div>
+    <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Update year automatically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
