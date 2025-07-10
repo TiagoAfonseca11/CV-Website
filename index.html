@@ -3,54 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="I help small businesses around the world and Portugal building professional-looking websites or applications. Software Engineering.">
+  <meta name="description" content="Tiago Afonseca - Software Engineering student at FEUP. Professional web and mobile development services for small businesses in Portugal and worldwide.">
+  <meta name="keywords" content="Software Engineering, Web Development, Mobile Development, Porto, Portugal, FEUP, Tiago Afonseca, Portfolio">
+  <meta name="author" content="Tiago Afonseca">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Tiago Afonseca | Software Engineering Portfolio">
+  <meta property="og:description" content="Professional software development services for small businesses. Web, mobile, and game development expertise.">
+  <meta property="og:type" content="website">
 
-  <title>Dev Portfolio | Tiago Afonseca</title>
-  <link rel="icon" href="assets/codeseparators_87490.png">
+  
+  <title>Software Engineering | Tiago Afonseca</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/codeseparators_87490.png" type="image/png">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-
-
   
-  
-
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tiago Afonseca",
+      "jobTitle": "Software Engineering Student",
+      "alumniOf": "Faculdade de Engenharia da Universidade do Porto (FEUP)",
+      "email": "mailto:afonseca.tiago@gmail.com",
+      "url": "https://yourportfolio.com",
+      "sameAs": [
+        "https://linkedin.com/in/tiago-afonseca11",
+        "https://github.com/TiagoAfonseca11"
+      ]
+    }
+  </script>
 </head>
 <body>
   
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#" class="logo">Tiago Afonseca |<span> Software Engineering</span></a>
+      <a href="#" class="logo" aria-label="Home">Tiago Afonseca |<span> Software Engineering</span></a>
       <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Experience</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#skills" aria-label="View skills">Experience</a>
+        <a href="#projects" aria-label="View projects">Projects</a>
+        <a href="#about" aria-label="About me">About</a>
+        <a href="#contact" aria-label="Contact me">Contact</a>
       </div>
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-heading">
     <div class="hero-content">
-      <h1 class="hero-title animate-on-scroll">Building Digital Experiences</h1>
+      <h1 class="hero-title animate-on-scroll" id="hero-heading">Building Digital Experiences</h1>
       <p class="hero-subtitle animate-on-scroll">Where Software meets execution.</p>
-      <div class="scroll-indicator animate-on-scroll">
+      <div class="scroll-indicator animate-on-scroll" aria-hidden="true">
         <span></span>
       </div>
     </div>
   </section>
+
   <!-- Skills & Expertise Section -->
-  <section id="skills" class="skills-section">
-    <h2 class="section-title">Skills & Expertise</h2>
+  <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+    <h2 class="section-title" id="skills-heading">Skills & Expertise</h2>
     <div class="skills-container">
       <div class="skill-category animate-on-scroll">
-        <div class="skill-icon">🌐</div>
+        <div class="skill-icon" aria-hidden="true">🌐</div>
         <h3>Web Development</h3>
         <p>Building responsive, modern websites with clean code and intuitive UX/UI design principles.</p>
         <div class="skill-tags">
@@ -62,7 +94,7 @@
       </div>
       
       <div class="skill-category animate-on-scroll delay-1">
-        <div class="skill-icon">⚙️</div>
+        <div class="skill-icon" aria-hidden="true">⚙️</div>
         <h3>Algorithms & Optimization</h3>
         <p>Designing efficient algorithms and data structures for optimal performance and scalability.</p>
         <div class="skill-tags">
@@ -74,7 +106,7 @@
       </div>
       
       <div class="skill-category animate-on-scroll delay-2">
-        <div class="skill-icon">🎮</div>
+        <div class="skill-icon" aria-hidden="true">🎮</div>
         <h3>Game Development</h3>
         <p>Creating engaging game experiences with attention to physics, mechanics, and player interaction.</p>
         <div class="skill-tags">
@@ -86,7 +118,7 @@
       </div>
       
       <div class="skill-category animate-on-scroll delay-3">
-        <div class="skill-icon">📱</div>
+        <div class="skill-icon" aria-hidden="true">📱</div>
         <h3>Mobile Development</h3>
         <p>Building cross-platform mobile applications with native performance and modern features.</p>
         <div class="skill-tags">
@@ -98,20 +130,22 @@
       </div>
     </div>
   </section>
+
   <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <h2 class="section-title">Featured Projects</h2>
+  <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+    <h2 class="section-title" id="projects-heading">Featured Projects</h2>
     <div class="projects-grid" id="projects-container">
       <!-- Projects will be loaded dynamically from projects.js -->
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about-section">
+  <section id="about" class="about-section" aria-labelledby="about-heading">
     <div class="about-content">
       <div class="about-text animate-on-scroll">
-        <h2>About Me</h2>
-        <p>I'm a passionate Software Engineering student at <strong>Faculdade de Engenharia da Universidade do Porto (FEUP)</strong>, with a strong background in modern technologies. I started learning Python at 14, finished high school with an average grade above 18 (out of 20), and today, at 20 years old, I specialize in building high-performance, accessible, and visually refined software — from applications to complex systems.<strong>I help small businesses around the world and Portugal building professional-looking websites or applications.</strong></p>        <div class="skills">
+        <h2 id="about-heading">About Me</h2>
+        <p>I'm a passionate Software Engineering student at <strong>Faculdade de Engenharia da Universidade do Porto (FEUP)</strong>, with a strong background in modern technologies. I started learning Python at 14, finished high school with an average grade above 18 (out of 20), and today, at 20 years old, I specialize in building high-performance, accessible, and visually refined software — from applications to complex systems.<strong> I help small businesses around the world and Portugal building professional-looking websites or applications.</strong></p>
+        <div class="skills">
           <span>JavaScript</span>
           <span>SQL</span>
           <span>Python</span>
@@ -122,51 +156,49 @@
           <span>HTML/CSS</span>
           <span>git/github</span>
           <span>Agile Methods</span>
-          
         </div>
       </div>
       <div class="about-image animate-on-scroll">
-        <!-- Replace with your image or illustration -->
-        <img src="assets/img.png">
-     
+        <img src="assets/img.png" alt="Tiago Afonseca portrait" width="400" height="400">
       </div>
+    </div>
   </section>
 
- <!-- Contact Section -->
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Get In Touch</h2>
-  <div class="contact-info">
-    <div class="contact-card animate-on-scroll">
-      <div class="contact-icon">✉️</div>
-      <h3>Email</h3>
-      <a href="mailto:afonseca.tiago@gmail.com">afonseca.tiago@gmail.com</a>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+    <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+    <div class="contact-info">
+      <div class="contact-card animate-on-scroll">
+        <div class="contact-icon" aria-hidden="true">✉️</div>
+        <h3>Email</h3>
+        <a href="mailto:tiagoafonsecadev@gmail.com">tiagoafonsecadev@gmail.com</a>
+      </div>
+      
+      <div class="contact-card animate-on-scroll delay-1">
+        <div class="contact-icon" aria-hidden="true">💼</div>
+        <h3>LinkedIn</h3>
+        <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank" rel="noopener noreferrer">LinkedIn Pessoal</a>
+      </div>
+      
+      <div class="contact-card animate-on-scroll delay-2">
+        <div class="contact-icon" aria-hidden="true">🐙</div>
+        <h3>GitHub</h3>
+        <a href="https://github.com/TiagoAfonseca11" target="_blank" rel="noopener noreferrer">TiagoAfonseca11</a>
+      </div>
     </div>
-    
-    <div class="contact-card animate-on-scroll delay-1">
-      <div class="contact-icon">💼</div>
-      <h3>LinkedIn</h3>
-      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn Pessoal</a>
-    </div>
-    
-    <div class="contact-card animate-on-scroll delay-2">
-      <div class="contact-icon">🐙</div>
-      <h3>GitHub</h3>
-      <a href="https://github.com/yourusername" target="_blank">TiagoAfonseca11</a>
-    </div>
-    
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Footer">
     <div class="social-links">
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
-      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+      <a href="https://github.com/TiagoAfonseca11" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:tiagoafonsecadev@gmail.com">Email</a>
     </div>
     <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="./js/projects.js"></script>
   <script src="./js/main.js"></script>
 </body>

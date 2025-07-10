@@ -3,36 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C++ Image Converter | Tiago Afonseca</title>
+  <title>PNG to SVG Tool | Tiago Afonseca</title>
+  <meta name="description" content="High-performance C++ image converter that transforms PNG files into scalable SVG vector graphics. Features batch processing, color accuracy preservation, and optimized memory management.">
+  <meta name="keywords" content="C++ image converter, PNG to SVG, vector graphics, image processing, Tiago Afonseca portfolio">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourportfolio.com/cpp-image-converter" />
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="C++ Image Converter: PNG to SVG Tool | Tiago Afonseca">
+  <meta property="og:description" content="High-performance C++ image converter for transforming PNG to SVG with batch processing and color accuracy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourportfolio.com/cpp-image-converter">
+  <!-- Add og:image when available -->
+  
+  <!-- Preloads -->
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
-  <meta name="description" content="Portfólio de Tiago Afonseca, desenvolvedor web especializado em React, PHP, Firebase. Projetos modernos e responsivos.">
-
   <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "C++ Image Converter",
+      "description": "PNG to SVG conversion tool with batch processing capabilities",
+      "programmingLanguage": "C++",
+      "codeRepository": "https://github.com/TiagoAfonseca11/cpp-png-converter",
+      "author": {
+        "@type": "Person",
+        "name": "Tiago Afonseca"
+      }
+    }
+  </script>
 </head>
 <body>
   
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="logo">Tiago Afonseca |<span> Software Engineering</span></a>
+      <a href="index.html" class="logo" aria-label="Home">Tiago Afonseca |<span> Software Engineering</span></a>
       <div class="nav-links">
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#skills" aria-label="View skills">Experience</a>
+        <a href="index.html#projects" aria-label="View projects">Projects</a>
+        <a href="index.html#about" aria-label="About me">About</a>
+        <a href="index.html#contact" aria-label="Contact me">Contact</a>
       </div>
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </nav>
 
   <!-- Project Detail Section -->
-  <main class="project-detail">
+  <main class="project-detail" itemscope itemtype="https://schema.org/SoftwareSourceCode">
     <div class="project-header">
       <div class="container">
-        <h1>C++ Image Converter</h1>
+        <h1 itemprop="name">C++ Image Converter</h1>
         <p class="subtitle">PNG to SVG Conversion Tool</p>
         <div class="project-meta">
           <span class="tag cpp">C++</span>
@@ -43,10 +80,8 @@
 
     <div class="project-content container">
       <div class="project-overview">
-        
-        
         <div class="project-links">
-          <a href="https://github.com/TiagoAfonseca11/cpp-png-converter" class="btn primary" target="_blank">
+          <a href="https://github.com/TiagoAfonseca11/cpp-png-converter" class="btn primary" target="_blank" rel="noopener noreferrer">
             View Code
           </a>
           <a href="index.html#projects" class="btn secondary">
@@ -57,7 +92,7 @@
 
       <div class="project-details">
         <h2>Project Overview</h2>
-        <p>This project is a high-performance image converter that transforms PNG files into scalable SVG vector graphics.<br>
+        <p itemprop="description">This project is a high-performance image converter that transforms PNG files into scalable SVG vector graphics.<br>
         This helps designers and everyone that uses social media, websites or even emails to convert images that have no scalability 
         into images that are vectorial, loosing none of it's quality.
         </p>
@@ -65,18 +100,18 @@
         <div class="project-features">
           <h3>Key Features:</h3>
           <ul>
-            <li>Supports batch processing of multiple files</li>
-            <li>Preserves transparency and color accuracy</li>
-            <li>Customizable output resolution</li>
-            <li>Command-line interface for easy integration into workflows</li>
-            <li>Optimized memory management for large image files</li>
+            <li itemprop="featureList">Supports batch processing of multiple files</li>
+            <li itemprop="featureList">Preserves transparency and color accuracy</li>
+            <li itemprop="featureList">Customizable output resolution</li>
+            <li itemprop="featureList">Command-line interface for easy integration into workflows</li>
+            <li itemprop="featureList">Optimized memory management for large image files</li>
           </ul>
         </div>
 
         <div class="project-technologies">
           <h3>Technologies Used:</h3>
           <div class="tech-badges">
-            <span>C++17</span>
+            <span itemprop="programmingLanguage">C++17</span>
             <span>Standard Template Library (STL)</span>
             <span>libpng</span>
             <span>Custom vectorization algorithms</span>
@@ -94,18 +129,16 @@
             <p>By utilizing multi-threading and efficient memory management techniques, the converter can process large batches of images with minimal resource usage.</p>
           </div>
         </div>
-
-        
       </div>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Footer">
     <div class="social-links">
-      <a href="https://github.com/TiagoAfonseca11" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
-      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+      <a href="https://github.com/TiagoAfonseca11" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:tiagoafonsecadev@gmail.com">Email</a>
     </div>
     <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
   </footer>

@@ -4,40 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freelancer Platform | Tiago Afonseca</title>
+  <meta name="description" content="Secure freelance marketplace platform built with PHP and SQLite. Features payment validation, messaging system, and protected SQL queries with prepared statements.">
+  <meta name="keywords" content="freelance platform, PHP project, SQLite database, secure web application, Tiago Afonseca portfolio">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourportfolio.com/freelancer-platform" />
+  
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="Freelancer Platform: PHP & SQL Marketplace | Tiago Afonseca">
+  <meta property="og:description" content="Secure freelance marketplace with payment validation and messaging system built with PHP and SQLite.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourportfolio.com/freelancer-platform">
+  <!-- Add og:image when available -->
+  
+  <!-- Preloads -->
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
-  <meta name="description" content="Portfólio de Tiago Afonseca, desenvolvedor web especializado em React, PHP, Firebase. Projetos modernos e responsivos.">
-
   <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Freelancer Platform",
+      "description": "Secure freelance marketplace with payment validation and messaging system",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "category": "web_application"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Tiago Afonseca"
+      },
+      "keywords": "PHP, SQLite, freelance platform, web development",
+      "codeRepository": "https://github.com/TiagoAfonseca11/freelancer-platform"
+    }
+  </script>
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="logo">Tiago Afonseca |<span> Software Engineering</span></a>
+      <a href="index.html" class="logo" aria-label="Home">Tiago Afonseca |<span> Software Engineering</span></a>
       <div class="nav-links">
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#skills" aria-label="View skills">Experience</a>
+        <a href="index.html#projects" aria-label="View projects">Projects</a>
+        <a href="index.html#about" aria-label="About me">About</a>
+        <a href="index.html#contact" aria-label="Contact me">Contact</a>
       </div>
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </nav>
 
   <!-- Project Detail Section -->
-  <main class="project-detail">
+  <main class="project-detail" itemscope itemtype="https://schema.org/WebApplication">
     <div class="project-header">
       <div class="container">
-        <h1>Freelancer Platform</h1>
+        <h1 itemprop="name">Freelancer Platform</h1>
         <p class="subtitle">A secure and dynamic web platform that connects freelancers with clients through a custom-built backend API.</p>
         <div class="project-meta">
-          <span class="tag php">PHP</span>
-          <span class="tag sql">SQL</span>
-          <span class="tag js">JavaScript</span>
+          <span class="tag php" itemprop="programmingLanguage">PHP</span>
+          <span class="tag sql" itemprop="programmingLanguage">SQL</span>
+          <span class="tag js" itemprop="programmingLanguage">JavaScript</span>
         </div>
       </div>
     </div>
@@ -45,7 +88,7 @@
     <div class="project-content container">
       <div class="project-overview">
         <div class="project-links">
-          <a href="https://github.com/TiagoAfonseca11/freelancer-platform" class="btn primary" target="_blank">
+          <a href="https://github.com/TiagoAfonseca11/Freelancer-Website" class="btn primary" target="_blank" rel="noopener noreferrer">
             View Code
           </a>
           <a href="index.html#projects" class="btn secondary">
@@ -56,7 +99,7 @@
 
       <div class="project-details">
         <h2>Project Overview</h2>
-        <p>This full-stack freelance marketplace allows clients to post job offers and hire service providers seamlessly.<br>
+        <p itemprop="description">This full-stack freelance marketplace allows clients to post job offers and hire service providers seamlessly.<br>
         Developed using PHP with an SQLite database, the platform integrates a secure backend API, regex-based validation for payments, and robust data protection via prepared statements. The platform includes messaging, transaction handling, and filtering mechanisms for a smooth user experience.
         The project was developed with 2 classmates at university.
         </p>
@@ -64,12 +107,12 @@
         <div class="project-features">
           <h3>Key Features:</h3>
           <ul>
-            <li>User registration and login with encoded characters and input sanitization</li>
-            <li>Client-freelancer messaging system scoped to each transaction</li>
-            <li>Simulated payment system with regex validation for card formats</li>
-            <li>Protected SQL queries using prepared statements</li>
-            <li>Advanced project filtering and search capabilities</li>
-            <li>Admin panel for category and user management</li>
+            <li itemprop="featureList">User registration and login with encoded characters and input sanitization</li>
+            <li itemprop="featureList">Client-freelancer messaging system scoped to each transaction</li>
+            <li itemprop="featureList">Simulated payment system with regex validation for card formats</li>
+            <li itemprop="featureList">Protected SQL queries using prepared statements</li>
+            <li itemprop="featureList">Advanced project filtering and search capabilities</li>
+            <li itemprop="featureList">Admin panel for category and user management</li>
           </ul>
         </div>
 
@@ -107,11 +150,11 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Footer">
     <div class="social-links">
-      <a href="https://github.com/TiagoAfonseca11" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank">LinkedIn</a>
-      <a href="mailto:afonseca.tiago@gmail.com">Email</a>
+      <a href="https://github.com/TiagoAfonseca11" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/tiago-afonseca11" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:tiagoafonsecadev@gmail.com">Email</a>
     </div>
     <p>© <span id="current-year"></span> Tiago Afonseca. All rights reserved.</p>
   </footer>
