@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tiagoafonseca11.github.io/CV-Website/sitemap.xml
